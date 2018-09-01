@@ -1,0 +1,542 @@
+/*-------------------------------MY RESETS-------------------------------*/
+
+html {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	transition: .5s;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+input {
+	border: none;
+	outline: none;
+}
+
+
+/*-------------------------------FONTS-------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400|Roboto');
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+/*-------------------------------Containers-------------------------------*/
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 100%;
+	padding: 0 15px;
+}
+
+/*-------------------------------HEADER-------------------------------*/
+
+header {
+	background: center url(../img/slider1.jpg);
+	height: 1024px;
+
+}
+
+header .container {
+	padding-top: 40px;
+}
+
+header .logoAndNav {
+	display: flex;
+	justify-content: space-between;
+	height: 56px;
+}
+
+.logoAndNav .logo {
+	display: flex;
+	align-items: center;
+}
+
+.logoAndNav .logo h1 {
+	font-family: "Raleway";
+	color: #ffffff;
+	font-size: 34px;
+	font-weight: 400;
+}
+
+.logoAndNav nav {
+	display: flex;
+	align-items: center;
+	font-family: Montserrat;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+
+
+.logoAndNav .cart {
+	margin-left: 63px;
+	margin-right: 28px;
+}
+
+.logoAndNav ul {
+	display: flex;
+}
+
+.logoAndNav li {
+	margin-left: 30px;
+}
+
+.logoAndNav li a:hover {
+	color: #c7b29a;
+}
+
+.slider {
+	display: flex;
+	height: calc(100% - 56px);
+	justify-content: center;
+	align-items: center;
+}
+
+.sliderText {
+	text-align: center;
+	color: #fff;
+	width: 590px;
+}
+
+.sliderText h3 {
+	font-family: Raleway;
+	font-size: 36px;
+	font-weight: 500;
+}
+
+.sliderText h2 {
+	font-family: Raleway;
+	font-size: 52px;
+	font-weight: 700;
+}
+
+.sliderText p {
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	margin-top: 19px;
+}
+
+.sliderText button {
+	border-radius: 3px;
+	background-color: #998675;
+	width: 170px;
+	height: 53px;
+	text-transform: uppercase;
+	font-family: Raleway;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+	margin-top: 52px;
+}
+
+/*-------------------------------SERVICES-------------------------------*/
+
+.services {
+	min-height: 373px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+.servicesItem {
+	text-align: center;
+	max-width: 266px;
+	margin-top: 80px;
+	cursor: pointer;
+	margin: 15px;
+}
+
+
+.servicesItem:hover h3 {
+	color: #c7b299;
+
+}
+
+.servicesItem:hover .underline {
+	background: #c7b299;
+}
+
+.servicesItem h3 {
+	font-family: Raleway;
+	color: #555555;
+	font-size: 22px;
+	font-weight: 600;
+	margin-top: 29px;
+}
+
+.servicesItem p {
+	font-family: Montserrat;
+	color: #8c8c8c;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	margin-top: 19px;
+}
+
+.servicesItem .underline {
+	width: 70px;
+	height: 3px;
+	background-color: #f1eee9;
+	margin: 0 auto;
+	margin-top: 33px;
+}
+
+/*-------------------------------IDEAS-------------------------------*/
+.ideas {}
+
+.ideas .container {
+	text-align: center;
+	min-height: 700px;
+	background-color: #fbfaf8;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ideas h2 {
+	font-family: Raleway;
+	color: #555555;
+	font-size: 30px;
+	font-weight: 600;
+	margin-top: 80px;
+}
+
+.ideas p {
+	font-family: Montserrat;
+	color: #8c8c8c;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 28px;
+	max-width: 770px;
+	margin-top: 24px;
+}
+
+.ideas .browserImages {}
+
+.ideas img {
+	position: absolute;
+	bottom: 0;
+}
+
+.ideas .left {
+	height: 400px;
+	left: 0;
+}
+
+.ideas .center {
+	height: 482px;
+	left: calc(50% - 385px);
+	z-index: 2;
+}
+
+.ideas .right {
+	height: 400px;
+	right: 0;
+}
+
+/*-------------------------------TEXT BOXES-------------------------------*/
+
+.textBoxes {
+	background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+	background: -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+	background: -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+	background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+	background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+	height: 150px;
+}
+
+.textBoxes .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.textBoxes h2 {
+	font-family: Raleway;
+	color: #ffffff;
+	font-size: 28px;
+	font-weight: 400;
+}
+
+.textBoxes span {
+	color: #c7b299;
+}
+
+.textBoxes p {
+	font-family: Montserrat;
+	color: #615855;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.textBoxes .purchase {
+	border-radius: 3px;
+	background-color: #998675;
+	width: 170px;
+	height: 50px;
+
+	font-family: Raleway;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+/*-------------------------------LATEST PROJECTS-------------------------------*/
+.latestProjects {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.latestProjects h2 {
+	font-family: Raleway;
+	color: #555555;
+	font-size: 30px;
+	font-weight: 600;
+	margin-top: 80px;
+}
+
+.latestProjects .desc {
+	font-family: Montserrat;
+	color: #8c8c8c;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 28px;
+	margin-top: 25px;
+	max-width: 760px;
+	text-align: center;
+}
+
+.latestProjects ul {
+	margin-top: 40px;
+	margin-bottom: 25px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.latestProjects li {
+	display: inline-block;
+	border: solid 1px #ebebeb;
+	border-radius: 3px;
+	font-family: Montserrat;
+	color: #8c8c8c;
+	font-size: 14px;
+	font-weight: 300;
+	text-align: center;
+	padding: 9px 24px;
+	margin: 5px;
+}
+
+.latestProjects li:hover,
+.latestProjects li.active {
+	color: #fff;
+	background-color: #998675;
+}
+
+.latestProjects .gallery {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.latestProjects .gallery-item {
+	width: 370px;
+	margin: 15px;
+	overflow: hidden;
+}
+
+.gallery-item .img {
+	height: 237px;
+	position: relative;
+}
+
+.gallery-item .img::after {
+	content: "";
+	position: absolute;
+	background: rgba(0, 0, 0, .5);
+	width: 100%;
+	height: inherit;
+	opacity: 0;
+}
+
+.gallery-item:hover .img::after {
+	opacity: 1;
+}
+
+.gallery-item:hover .img {
+	transform: scale(1.1);
+}
+
+.gallery-item .text {
+	height: 100px;
+	background-color: #fbfaf8;
+	position: relative;
+}
+
+.gallery-item .text::before {
+	content: "";
+	position: absolute;
+	border: solid 15px transparent;
+	border-bottom: solid 10px #fbfaf8;
+	top: -25px;
+	left: 19px;
+}
+
+.gallery-item1 .img {
+	background-image: url(/img/photo1.jpg);
+}
+
+.gallery-item2 .img {
+	background-image: url(/img/photo1.jpg);
+}
+
+.gallery-item3 .img {
+	background-image: url(/img/photo1.jpg);
+}
+
+.gallery-item4 .img {
+	background-image: url(/img/photo1.jpg);
+}
+
+.gallery-item5 .img {
+	background-image: url(/img/photo1.jpg);
+}
+
+.gallery-item6 .img {
+	background-image: url(/img/photo1.jpg);
+}
+
+
+
+.gallery .text {
+	padding: 30px;
+}
+
+.gallery .text h3 {
+	font-family: Raleway;
+	color: #c7b29a;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.gallery .text p {
+	font-family: Montserrat;
+	color: #d1d1d1;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 20px;
+	margin-top: 14px;
+}
+
+.gallery-item:hover .text {
+	background-color: #362f2d;
+}
+
+.gallery-item:hover p {
+	color: #c7b299;
+}
+
+.gallery-item:hover h3 {
+	color: #fff;
+}
+
+.gallery-item:hover .text::before {
+	border-bottom: solid 10px #362f2d;
+}
+
+.latestProjects button {
+	border-radius: 3px;
+	background-color: #998675;
+	width: 170px;
+	height: 53px;
+	text-transform: uppercase;
+	font-family: Raleway;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+	margin-top: 52px;
+	margin-bottom: 20px;
+}
+
+/*-------------------------------MOBILE-------------------------------*/
+.mobile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.mobile img {
+	max-width: 100%;
+}
+
+.mobile .mobileText {
+	max-width: 660px;
+	padding: 10px;
+}
+
+.mobile h2 {
+	font-family: Raleway;
+	color: #555555;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.mobile p {
+	margin-top: 40px;
+	font-family: Montserrat;
+	color: #8c8c8c;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 28px
+}
+
+.mobile ul {
+	margin-left: 100px;
+	margin-top: 45px;
+}
+
+.mobile li {
+	margin-bottom: 1em;
+	position: relative;
+	font-family: Montserrat;
+	color: #8c8c8c;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.mobile li::before {
+	content: url(/img/01.png);
+	position: absolute;
+	left: -50px;
+	top: -2px;
+}
