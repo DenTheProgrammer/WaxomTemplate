@@ -108,7 +108,63 @@ header li {
 header li a:hover {
     color: #c7b29a;
 }
+          /*BURGER*/
 
+
+.burger {
+    width: 50px;
+    height: 50px;
+    background: #998675;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    display: none;
+    border-radius:  5px;
+}
+.burger .line{
+	background: white;
+	width: 25px;
+	height: 2px;
+	position: relative;
+	transition: .5s;
+}
+.burger .line::before, .burger .line::after{
+	content: "";
+	position: absolute;
+	background-color: white;
+	width: inherit;
+	height: inherit;
+	transition: .5s;
+}
+.burger .line::before{
+	top: -9px;
+}
+.burger .line::after{
+	top: 9px;
+}
+
+
+.burger_active .line::before{
+
+	transform: translateY(9px) rotate(45deg) ;
+	
+}
+.burger_active .line::after{
+	transform: translateY(-9px) rotate(-45deg);
+}
+.burger_active .line{
+	background: inherit;
+}
+
+
+
+.visible{
+    display: flex;
+}
+
+        /*burger end*/
 .slider {
     display: flex;
     height: calc(100% - 56px);
@@ -605,8 +661,19 @@ header li a:hover {
 
 
 @media screen and (max-width: 970px) {
+    .burger{
+        display: flex;
+    }
+    
     header nav {
-/*        display: none;*/
+        display: none;
         justify-content: space-around;
     }
+    
+    .logoAndBurger {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
 } 
