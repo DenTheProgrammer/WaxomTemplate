@@ -37,8 +37,7 @@ input {
 
 /*-------------------------------FONTS-------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400|Roboto');
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
 /*-------------------------------Containers-------------------------------*/
 
 .container {
@@ -52,7 +51,7 @@ input {
 
 header {
 	background: center url(../img/slider1.jpg);
-	height: 1024px;
+	height: 100vh;
 
 }
 
@@ -377,6 +376,8 @@ header .logoAndNav {
 .gallery-item .img {
 	height: 237px;
 	position: relative;
+
+    
 }
 
 .gallery-item .img::after {
@@ -412,27 +413,28 @@ header .logoAndNav {
 }
 
 .gallery-item1 .img {
-	background-image: url(/img/photo1.jpg);
+    background-image: url(../img/photo1.jpg);
+    
 }
 
 .gallery-item2 .img {
-	background-image: url(/img/photo1.jpg);
+	background-image: url(../img/photo1.jpg);
 }
 
 .gallery-item3 .img {
-	background-image: url(/img/photo1.jpg);
+	background-image: url(../img/photo1.jpg);
 }
 
 .gallery-item4 .img {
-	background-image: url(/img/photo1.jpg);
+	background-image: url(../img/photo1.jpg);
 }
 
 .gallery-item5 .img {
-	background-image: url(/img/photo1.jpg);
+	background-image: url(../img/photo1.jpg);
 }
 
 .gallery-item6 .img {
-	background-image: url(/img/photo1.jpg);
+	background-image: url(../img/photo1.jpg);
 }
 
 
@@ -492,7 +494,7 @@ header .logoAndNav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
+	flex-wrap: wrap-reverse;
 }
 
 .mobile img {
@@ -535,7 +537,7 @@ header .logoAndNav {
 }
 
 .mobile li::before {
-	content: url(/img/01.png);
+	content: url(../img/01.png);
 	position: absolute;
 	left: -50px;
 	top: -2px;
