@@ -656,7 +656,21 @@ header li a:hover {
     font-weight: 300;
     text-transform: uppercase;
 }
+/*-------------------------------PARTNERS-------------------------------*/
 
+.partners {
+    min-height: 489px;
+    background:  
+        rgb(70,70,70)
+        url(../img/partners_bg.jpg) center no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.partners img{
+    margin: 45px;
+}
 /*-------------------------------@MEDIA-------------------------------*/
 
 
