@@ -61,24 +61,26 @@ header .container {
 
 header .logoAndNav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     height: 56px;
 }
 
-.logoAndNav .logo {
+header .logo {
     display: flex;
     align-items: center;
 }
 
-.logoAndNav .logo h1 {
+header .logo h1 {
     font-family: "Raleway";
     color: #ffffff;
     font-size: 34px;
     font-weight: 400;
 }
 
-.logoAndNav nav {
+header nav {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     font-family: Montserrat;
     color: #ffffff;
@@ -88,20 +90,22 @@ header .logoAndNav {
 
 
 
-.logoAndNav .cart {
+header .cart {
     margin-left: 63px;
     margin-right: 28px;
 }
 
-.logoAndNav ul {
+header ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.logoAndNav li {
-    margin-left: 30px;
+header li {
+    margin: 10px;
 }
 
-.logoAndNav li a:hover {
+header li a:hover {
     color: #c7b29a;
 }
 
@@ -594,4 +598,15 @@ header .logoAndNav {
     color: #c7b299;
     font-size: 14px;
     font-weight: 300;
+    text-transform: uppercase;
 }
+
+/*-------------------------------@MEDIA-------------------------------*/
+
+
+@media screen and (max-width: 970px) {
+    header nav {
+/*        display: none;*/
+        justify-content: space-around;
+    }
+} 
